@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="snake_01.css">
+</head>
+<style>
+
+    #title-con {
+        margin: 0 auto;
+    }
+
+    #item_img {
+        width: 50px;
+    }
+
+    #total_count {
+        font-size: 40px;
+    }
+
+    #content {
+        margin: 0 auto;
+    }
+
+    #snake > tr > td {
+        width: 40px;
+        height: 40px;
+        border: solid 1px black;
+    }
+
+    .item {
+        background-color: red;
+    }
+
+    .snake_body {
+        background-color: lightpink;
+    }
+
+    .snake_head {
+        background-color: blueviolet;
+    }
+
+    #msg {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 50px;
+    }
+</style>
+<body>
+    <table id="title-con">
+        <tr id="title_td">
+            <td colspan="2"><h2>Snake Game</h2></td>
+        </tr>
+        <tr>
+            <td id="imgTd">
+                <img src="snake_img/apple.png" id="item_img">
+            </td>
+            <td id="countTd">
+                <span id="total_count">0</span>
+            </td>
+            <td id="btnTd">
+                <button id="playBtn" onclick="startGame()">▷ Play</button>
+            </td>
+        </tr>
+    </table>
+
+    <table id="content">
+        <tr>
+            <td id="my_game"></td>
+        </tr>
+    </table>
+
+    <div id="msg"></div>
+
+    <script src="snake_01.js"></script>
+</body>
+</html>

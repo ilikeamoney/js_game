@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background-color: silver;
+    }
+
+    #main {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #container {
+        position: relative;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    #stage_btn {
+        margin: 0 auto;
+    }
+
+    #main tr td {
+        text-align: center;
+    }
+
+    #content {
+        margin: 0 auto;
+    }
+
+    .player > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #sub tr td {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+    }
+
+    .wall {
+        background-color: yellowgreen;
+        border: 1px solid black;
+        width: 60px;
+        height: 60px;
+    }
+
+    .space {
+        border: 1px solid black;
+        width: 60px;
+        height: 60px;
+    }
+
+    .out_of_map {
+        opacity: 0;
+    }
+
+    .block {
+        width: 60px;
+        height: 60px;
+        background-color: cornflowerblue;
+        border: 1px solid black;
+    }
+
+    .goal_point {
+        border: 1px solid black;
+        width: 60px;
+        height: 60px;
+        background-color: crimson;
+    }
+</style>
+
+<body>
+
+<h2 id="title">소코반 게임</h2>
+<table id="stage_btn">
+    <tr>
+        <td><button onclick="clickStageOne()">STAGE1</button></td>
+        <td><button onclick="clickStageTwo()">STAGE2</button></td>
+        <td><button onclick="clickStageThree()">STAGE3</button></td>
+    </tr>
+</table>
+<table id="content">
+    <tr>
+        <td id="game_table">
+            <div id="container">
+
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script src="socoban.js"></script>
+</body>
+</html>
