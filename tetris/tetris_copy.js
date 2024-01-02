@@ -363,7 +363,9 @@ let lineClear = () => {
 }
 
 let playGame = () => {
+    // 게임 종료
     if (gameOver == true) {
+        // 인터벌 종료
         clearInterval(intervalId);
 
         alert("Game Over");
